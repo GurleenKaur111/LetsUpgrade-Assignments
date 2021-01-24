@@ -1,0 +1,42 @@
+<html>
+
+	<head>
+		<title> Welcome</title>
+	</head>
+	<body> 
+		<h1>JavaScript Assignment 3</h1>
+		<div>
+			<p>Question1.</p>
+		</div>
+
+		<script> 
+			var library = [
+ 				{
+ 					author: 'Bill Gates',
+ 					title: 'The Road Ahead',
+ 					readingStatus: true
+ 				},
+ 				{
+ 					author: 'Steve Jobs',
+ 					title: 'Walter Isaacson',
+ 					readingStatus: true
+ 				},
+ 				{
+ 					author: 'Suzanne Collins',
+ 					title: 'Mockingjay: The Final Book of The Hunger Games',
+ 					readingStatus: false
+ 				}];
+			for(i=0; i<library.length; i++)
+			{
+				if(library[i].readingStatus==true)
+				{
+					console.log("Already read '"+library[i].author+"' by "+library[i].title)
+				}
+				else 
+				{
+					console.log("You still need to read '"+library[i].author+"' by "+library[i].title)
+				}
+			}
+		</script>
+
+		</body>
